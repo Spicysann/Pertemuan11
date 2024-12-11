@@ -1,6 +1,5 @@
-CREATE VIEW roomservices AS
+CREATE VIEW customers_payments AS
 
-SELECT Rooms.room_type, Services.reservation_id, Customers.name
-FROM   Rooms CROSS JOIN
-             Services CROSS JOIN
-             Customers
+SELECT Customers.name, Payments.amount
+FROM   Customers CROSS JOIN
+             Payments
